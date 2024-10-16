@@ -3,6 +3,7 @@
 }
 
 * {
+    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -171,7 +172,6 @@ a:hover {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .wrapper-logo {
@@ -923,9 +923,11 @@ h6 {
     width: 100%;
     height: 24px;
 }
-.wrapper-phone-mini, .wrapper-gmail-mini{
+
+.wrapper-phone-mini, .wrapper-gmail-mini {
     margin-top: 35px;
 }
+
 .wrapper-location a {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -953,7 +955,8 @@ h6 {
     width: 50%;
     height: 100%;
 }
-.section-settlement-account a{
+
+.section-settlement-account a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -962,23 +965,27 @@ h6 {
     color: #FFFFFF;
     line-height: 26.56px;
 }
-.section-settlement-account{
+
+.section-settlement-account {
     width: 100%;
     height: 100.64px;
     display: flex;
     margin-bottom: 55px;
 }
-.section-settlement-account-first, .section-settlement-account-second{
+
+.section-settlement-account-first, .section-settlement-account-second {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-content: space-between;
 }
-.licenses{
+
+.licenses {
     margin-bottom: 37px;
 }
-.bootom-service-area{
+
+.bootom-service-area {
     width: 100%;
     height: 140px;
     display: flex;
@@ -986,7 +993,8 @@ h6 {
     justify-content: space-between;
     margin-top: 58px;
 }
-.bootom-service-area h6{
+
+.bootom-service-area h6 {
     padding: 0px;
 }
 
@@ -1001,20 +1009,21 @@ h6 {
     align-items: center;
 }
 
-.social-networks-first{
+.social-networks-first {
     width: 193px;
     height: 29.45px;
     display: flex;
     justify-content: space-between;
 }
 
-.social-networks-second{
+.social-networks-second {
     width: 834.39px;
     height: 29.45px;
     display: flex;
     justify-content: space-between;
 }
-.social-networks-second a,.social-networks-second p{
+
+.social-networks-second a, .social-networks-second p {
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -1026,9 +1035,254 @@ h6 {
     letter-spacing: 1.4px;
 }
 
-.container-a-img-we-accept{
+.container-a-img-we-accept {
     width: 395px;
     height: 59px;
     display: flex;
     justify-content: space-between;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    background-color: #000;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    padding: 20px;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Show the burger menu and mobile navigation on smaller screens */
+@media (max-width: 768px) {
+    .first-menu {
+        display: none;
+    }
+
+    .wrapper-message textarea {
+        height: 60px;
+    }
+
+    .form-menu-second input, .form-menu-first input {
+        height: 48px;
+    }
+
+    .form-menu {
+        height: 300px;
+    }
+
+    .wrapper-logo {
+        height: 35%;
+    }
+
+    .form-menu button {
+        width: 130px;
+        height: 55px;
+    }
+
+    .burger-menu {
+        display: flex;
+
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        width: 100%;
+        height: 280px;
+        background-color: #043F45;
+        z-index: 99;
+    }
+
+    .mobile-menu.active a {
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+}
+
+.mobile-menu ul li a, .burger-menu span {
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 9000px;
+        margin: 10px;
+    }
+
+    .wrapper-form-menu {
+        height: 320px;
+    }
+
+    .wrapper-logo-form-menu {
+        flex-direction: column;
+        height: 450px;
+        margin-top: 120px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .wrapper-logo-form-menu h2 {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .wrapper-logo-form-menu h3 {
+        font-size: 16px;
+        bottom: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .second-menu {
+        order: 1;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .second-menu {
+        width: 100%;
+        height: 80px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .second-menu p {
+        font-size: 13px;
+    }
+
+    .menu-p-right {
+        width: 200px;
+    }
+
+    .menu-p-right p {
+        font-size: 15px;
+    }
+
+    .wrapper-message, .form-menu-second {
+        margin-top: 0;
+    }
+
+    .wrapper-nav-second-menu {
+        height: 90px;
+        margin-top: 8px;
+    }
+
+    .wrapper-nav-second-menu ul {
+        flex-wrap: wrap;
+        line-height: 2;
+    }
+
+    .wrapper-nav-second-menu a {
+        padding-right: 20px;
+    }
+
+    .financing-wrapper {
+        height: 379px;
+        margin-top: 20px;
+    }
+    .financing-first-wrapper{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .first-section h2{
+        font-size: 29px;
+    }
+    .third-section h3{
+        font-size: 34px;
+    }
+    .third-section{
+        margin-bottom: 10px;
+    }
+    .wrapper-money{
+        height: 85px;
+        margin-top: 25px;
+    }
+    .wrapper-money img{
+        height: 77px;
+    }
+    .wrapper-menu{
+        height: 1275px;
+    }
+    .wrapper-flooring-options h3{
+        font-size: 34px;
+    }
+    .wrapper-flooring-options h2 {
+        font-size: 42px;
+    }
+    .wrapper-flooring-options {
+        height: 2376px;
+    }
+    .container-process-works{
+        height: 815px;
+        display: block;
+    }
+    .blue-stripe-first{
+        margin-top: 70px;
+        margin-bottom: 32px;
+    }
+    .for-all h4{
+        margin-bottom: 20px;
+    }
+    .for-all h2{
+        font-size: 37px;
+        line-height: 1;
+    }
+    .for-all h3{
+        margin-top: 0;
+        font-size: 32px;
+    }
+    .for-all {
+        height: 795px;
+    }
+    .our-blog{
+        flex-wrap: wrap;
+    }
+    .wrapper-our-blog{
+        height: 1260px;
+    }
+    .wrapper-our-newsletter{
+        height: 700px;
+    }
+    .free-home h2{
+        font-size: 27px;
+    }
 }
