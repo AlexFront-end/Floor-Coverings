@@ -582,7 +582,7 @@ h3 {
 
 .container-our-blog {
     width: 1318px;
-    height: 100%;
+    height: 91%;
 }
 
 .our-blog {
@@ -601,7 +601,7 @@ h3 {
     color: #FFFFFF;
 }
 
-.container-our-blog button {
+.view-all-btn {
     width: 186.97px;
     height: 47.39px;
     background-color: #043F45;
@@ -614,13 +614,13 @@ h3 {
     font-weight: 700;
 }
 
-.container-our-blog button img {
+.wrapper-our-blog img {
     padding-left: 5px;
     color: #FFFFFF;
 }
 
-.container-our-blog button a {
-    text-decoration: underline
+.wrapper-our-blog a {
+    text-decoration: none;
 }
 
 .container-our-blog h4 {
@@ -1136,7 +1136,7 @@ h6 {
 
 @media (max-width: 768px) {
     body {
-        height: 9000px;
+        height: 8870px;
         margin: 10px;
     }
 
@@ -1219,70 +1219,170 @@ h6 {
         height: 379px;
         margin-top: 20px;
     }
-    .financing-first-wrapper{
+
+    .financing-first-wrapper {
         height: auto;
         flex-wrap: wrap;
     }
-    .first-section h2{
+
+    .first-section h2 {
         font-size: 29px;
     }
-    .third-section h3{
+
+    .third-section h3 {
         font-size: 34px;
     }
-    .third-section{
+
+    .third-section {
         margin-bottom: 10px;
     }
-    .wrapper-money{
+
+    .wrapper-money {
         height: 85px;
         margin-top: 25px;
     }
-    .wrapper-money img{
+
+    .wrapper-money img {
         height: 77px;
     }
-    .wrapper-menu{
+
+    .wrapper-menu {
         height: 1275px;
     }
-    .wrapper-flooring-options h3{
+
+    .wrapper-flooring-options h3 {
         font-size: 34px;
     }
+
     .wrapper-flooring-options h2 {
         font-size: 42px;
     }
+
     .wrapper-flooring-options {
         height: 2376px;
     }
-    .container-process-works{
+
+    .container-process-works {
         height: 815px;
         display: block;
     }
-    .blue-stripe-first{
+
+    .blue-stripe-first {
         margin-top: 70px;
         margin-bottom: 32px;
     }
-    .for-all h4{
+
+    .for-all h4 {
         margin-bottom: 20px;
     }
-    .for-all h2{
-        font-size: 37px;
+
+    .for-all h2 {
+        font-size: 32px;
         line-height: 1;
     }
-    .for-all h3{
+
+    .for-all h3 {
         margin-top: 0;
         font-size: 32px;
     }
+
     .for-all {
         height: 795px;
     }
-    .our-blog{
+
+    .our-blog {
         flex-wrap: wrap;
     }
-    .wrapper-our-blog{
-        height: 1260px;
+
+    .wrapper-our-blog {
+        height: 1350px;
     }
-    .wrapper-our-newsletter{
-        height: 700px;
+
+    .wrapper-our-newsletter {
+        height: auto;
     }
-    .free-home h2{
+
+    .free-home h2 {
         font-size: 27px;
+    }
+
+    .container-our-blog {
+        height: 95%;
+    }
+
+    .our-newsletter {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .newsletter-img {
+        width: 27%;
+        height: auto;
+        margin: auto;
+    }
+
+    .our-newsletter-gmail-form form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .our-newsletter-gmail-form {
+        align-items: stretch;
+        margin: auto;
+        width: auto;
+    }
+
+    .our-text {
+        text-align: center;
+    }
+
+    /* Footer mobile start */
+    footer {
+        height: auto;
+    }
+
+    .footer-container {
+        width: 95%;
+        height: auto;
+    }
+
+    .wrapper-contacts-location {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts-location, .settlement-account, .service-area, .bootom-service-area{
+        margin: auto;
+        margin-top: 15px;
+    }
+    .social-networks{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .social-networks-second{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-networks-first{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .social-networks-first img{
+        width: 3rem;
+        height: auto;
+    }
+    .back-top{
+        width: 10rem;
+        height: auto;
+        margin-top: 10px;
     }
 }
