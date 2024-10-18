@@ -1136,7 +1136,7 @@ h6 {
 
 @media (max-width: 768px) {
     body {
-        height: 8870px;
+        height: auto;
         margin: 10px;
     }
 
@@ -1312,9 +1312,8 @@ h6 {
 
     .our-newsletter {
         width: 95%;
-        height: auto;
+        height: 420px;
         flex-direction: column;
-        margin: 20px auto;
     }
 
     .newsletter-img {
@@ -1377,12 +1376,15 @@ h6 {
         justify-content: space-around;
     }
     .social-networks-first img{
-        width: 3rem;
+        width: 2.5rem;
         height: auto;
     }
     .back-top{
         width: 10rem;
         height: auto;
         margin-top: 10px;
+    }
+    .wrapper-contacts-location p{
+        font-size: 13px;
     }
 }
