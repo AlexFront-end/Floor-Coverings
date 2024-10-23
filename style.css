@@ -304,7 +304,6 @@ h3 {
 /* .wrapper-logo end */
 .wrapper-nav-financing-menu {
     max-width: 1440px;
-    height: 100%;
     margin: auto;
 }
 
@@ -432,7 +431,6 @@ h3 {
 /* Start wrapper-flooring-options */
 .wrapper-flooring-options {
     max-width: 1440px;
-    height: 1000px;
     margin: auto;
 }
 
@@ -462,7 +460,6 @@ h3 {
 
 .gallery-floor-covering-options {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -829,7 +826,7 @@ footer {
 }
 
 .footer-container {
-    width: 1356px;
+    max-width: 1356px;
     height: 539.4px;
     display: flex;
     flex-direction: column;
@@ -852,12 +849,13 @@ footer {
 }
 
 .contacts-location {
-    width: 452px;
+    max-width: 452px;
     height: 285.93;
 }
 
 .settlement-account {
-    width: 452px;
+    width: 100%;
+    max-width: 452px;
     height: 303.62px;
     display: flex;
     flex-direction: column;
@@ -865,7 +863,7 @@ footer {
 }
 
 .service-area {
-    width: 452px;
+    max-width: 452px;
     height: 408.95px;
 }
 
@@ -909,7 +907,7 @@ h6 {
 }
 
 .location-phone-gmail {
-    width: 420px;
+    max-width: 420px;
     height: 224.9px;
 }
 
@@ -946,7 +944,7 @@ h6 {
 }
 
 .service-area-cities {
-    width: 420px;
+    max-width: 420px;
     height: 175px;
     display: flex;
 }
@@ -1017,7 +1015,8 @@ h6 {
 }
 
 .social-networks-second {
-    width: 834.39px;
+    width: 100%;
+    max-width: 834.39px;
     height: 29.45px;
     display: flex;
     justify-content: space-between;
@@ -1036,7 +1035,8 @@ h6 {
 }
 
 .container-a-img-we-accept {
-    width: 395px;
+    width: 100%;
+    max-width: 395px;
     height: 59px;
     display: flex;
     justify-content: space-between;
@@ -1259,7 +1259,7 @@ h6 {
     }
 
     .wrapper-flooring-options {
-        height: 2376px;
+        height: auto;
     }
 
     .container-process-works {
@@ -1390,5 +1390,8 @@ h6 {
     }
     .blue-stripe-second{
         margin-top: 40px;
+    }
+    .gallery-floor-covering-options{
+        flex-wrap: wrap;
     }
 }
