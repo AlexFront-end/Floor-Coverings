@@ -349,6 +349,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 15px;
 }
 
 .first-section {
@@ -365,10 +366,14 @@ h3 {
 }
 
 .second-section {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
     height: 100%;
 }
-
+.second-section img{
+    width: 100%;
+    height: auto;
+}
 .third-section h3 {
     font-family: "Pragati Narrow", sans-serif;
     font-weight: 400;
@@ -385,7 +390,8 @@ h3 {
 }
 
 .financing-first-wrapper form {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 60px;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -400,6 +406,9 @@ h3 {
 }
 
 .financing-first-wrapper input {
+    width: 100%;
+    max-width: 204px;
+    border-radius: 30px;
     border: none;
     outline: none;
 }
@@ -409,6 +418,7 @@ h3 {
 }
 
 .form-button {
+    border-radius: 50%;
     border: none;
 }
 
@@ -863,6 +873,7 @@ footer {
 }
 
 .service-area {
+    width: 100%;
     max-width: 452px;
     height: 408.95px;
 }
@@ -1263,12 +1274,12 @@ h6 {
     }
 
     .container-process-works {
-        height: 815px;
+        height: auto;
         display: block;
     }
 
     .blue-stripe-first {
-        margin-top: 70px;
+        margin-top: 0;
         margin-bottom: 32px;
     }
 
@@ -1291,14 +1302,17 @@ h6 {
     }
 
     .our-blog {
+        width: 100%;
+        height: auto;
         flex-wrap: wrap;
     }
 
     .wrapper-our-blog {
-        height: 1350px;
+        width: 100%;
+        height: auto;
         margin-top: 40px;
     }
-
+    
     .wrapper-our-newsletter {
         height: auto;
     }
@@ -1308,7 +1322,8 @@ h6 {
     }
 
     .container-our-blog {
-        height: 95%;
+        height: auto;
+        width: 100%;
     }
 
     .our-newsletter {
@@ -1358,6 +1373,7 @@ h6 {
         flex-direction: column;
     }
     .contacts-location, .settlement-account, .service-area, .bootom-service-area{
+        width: 100%;
         margin: auto;
         margin-top: 15px;
     }
@@ -1394,4 +1410,24 @@ h6 {
     .gallery-floor-covering-options{
         flex-wrap: wrap;
     }
+    .gallery-hardwood, .gallery-bedroom, .vinyl{
+        width: 100%;
+    }
+    .container-process-works img{
+        height: auto;
+    }
+    .our-blog img{
+        width: 100%;
+        height: auto;
+    }
+    .container-our-blog img {
+        width: 100%;
+        height: auto;
+      }
+      .our-blog a{
+        width: 100%;
+      }
+      .hill{
+        margin: 0;
+      }
 }
