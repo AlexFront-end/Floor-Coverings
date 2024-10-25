@@ -420,6 +420,7 @@ h3 {
 .form-button {
     border-radius: 50%;
     border: none;
+    background-color: transparent;
 }
 
 .third-section {
